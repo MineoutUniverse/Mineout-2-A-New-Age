@@ -1,0 +1,152 @@
+{
+    "images":
+    {
+		"modpack":
+		{
+            "image" : "mainmenu:minecraft.png",
+            "posX" : -100,
+            "posY" : -130,
+            "width" : 200,
+            "height" : 120,
+            "alignment" : "center"
+		}
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -100,
+            "posY" : -25,
+            "width" : 200,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:longbutton.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+
+        "Official Server":
+        {
+            "text" : "Official Server",
+            "posX" : -100,
+            "posY" : 0,
+            "width" : 200,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:longbutton.png",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "mineout.unitedworldminers.com"
+            }
+        },
+
+        "Multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -100,
+            "posY" : 25,
+            "width" : 200,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:longbutton.png",
+            "action" : 
+            {
+                "type" : "openGui",
+				"gui" : "multiplayer"
+            }
+        },
+
+        "Mods":
+        {
+            "text" : "Mods",
+            "posX" : -100,
+            "posY" : 50,
+            "width" : 98,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:shortbutton.png",
+            "action" : 
+            {
+                "type" : "openGui",
+				"gui" : "mods"
+            }
+        },
+        "options":
+        {
+            "text" : "Options",
+            "posX" : 2,
+            "posY" : 50,
+            "width" : 98,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:shortbutton.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : -100,
+            "posY" : 75,
+            "width" : 200,
+            "height" : 20,
+			"alignment" : "center",
+			"texture" : "mainmenu:longbutton.png",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },		
+                
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -20,
+            "posY" : 0,
+            "width" : 0,
+            "height" : 0,
+			"alignment" : "top_right",
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB",
+            "posX" : -108,
+            "posY" : -15,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+    
+    "other":
+	{
+        "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["mainmenu:screenshot1.png","mainmenu:screenshot2.png","mainmenu:screenshot3.png","mainmenu:screenshot4.png","mainmenu:screenshot5.png","mainmenu:screenshot6.png"],
+                "displayDuration" : 220,
+                "fadeDuration" : 40
+            }
+        }
+    }
+}
